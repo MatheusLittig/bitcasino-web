@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:MatheusLittig/bitcassino-web.git",
-  "author": "MatheusLittig <littig.works@gmail.com>"
+  "author": "MatheusLittig <littig.works@gmail.com>",
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^7.0.4"
+  }
 }
