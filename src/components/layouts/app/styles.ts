@@ -5,7 +5,7 @@ export const Wrapper = styled('main', {
   background: '$background',
 
   display: 'grid',
-  rows: '80px auto 80px',
+  rows: '80px auto 140px',
 });
 
 export const Content = styled('div', {
