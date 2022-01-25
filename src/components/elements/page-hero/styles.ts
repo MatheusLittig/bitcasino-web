@@ -18,6 +18,6 @@ export const HeroTitle = styled('h1', {
 export const HeroDescription = styled('p', {
   fontSize: '$lg',
   maxWidth: 280,
-  lineHeight: 1.15,
+  lineHeight: 1.5,
   color: '$low_text',
 });

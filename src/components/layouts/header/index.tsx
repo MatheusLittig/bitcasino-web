@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import * as S from './styles';
+import Logo from '@/svgs/logo.svg';
 
 export const Header = () => {
   return (
     <S.Wrapper>
-      <Image src="/svgs/logo.svg" width={160} height={50} alt="Bitcasino.io" />
+      <Image src={Logo} alt="Bitcasino.io" />
     </S.Wrapper>
   );
 };

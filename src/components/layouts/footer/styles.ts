@@ -7,7 +7,7 @@ export const Wrapper = styled('footer', {
 });
 
 export const Content = styled('div', {
-  maxWidth: 1280,
+  maxWidth: 1200,
   height: '100%',
   m: '0 auto',
 
