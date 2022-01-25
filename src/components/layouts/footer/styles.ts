@@ -3,6 +3,7 @@ import { styled } from 'stitches.config';
 export const Wrapper = styled('footer', {
   width: '100%',
   background: 'white',
+  zIndex: 2,
 });
 
 export const Content = styled('div', {
