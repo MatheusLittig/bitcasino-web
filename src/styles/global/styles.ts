@@ -36,24 +36,4 @@ export const globalStyles = globalCss({
   'h1, h2, h3': {
     fontFamily: '$body',
   },
-
-  '#ual-box': {
-    background: 'rgb(15, 45, 15) !important',
-    color: 'white !important',
-    borderRadius: '10px !important',
-  },
-
-  '#ual-box div div p': {
-    color: ' white !important',
-  },
-
-  '#ual-box h1 ': {
-    color: 'white !important',
-    alignItems: 'center !important',
-    fontSize: '24px !important',
-  },
-
-  '#ual-box:first-child span': {
-    color: 'white !important',
-  },
 });
