@@ -8,7 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "g_el": "yarn plop --plopfile ./generators/elements/plopfile.js",
+    "g_v": "yarn plop --plopfile ./generators/views/plopfile.js "
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
