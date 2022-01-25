@@ -6,7 +6,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   globalStyles();
   return (
     <AppLayout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </AppLayout>
   );
 };
