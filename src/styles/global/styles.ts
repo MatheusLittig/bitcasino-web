@@ -1,14 +1,14 @@
-import { globalCss } from '@/styles/global';
+import { globalCss } from 'stitches.config';
 
 export const globalStyles = globalCss({
+  body: {
+    background: '$background',
+    color: '$text',
+  },
   '*': {
     margin: 0,
     padding: 0,
     boxSizing: 'border-box',
-  },
-  body: {
-    background: '$background',
-    color: '$text',
   },
   '@media (max-width: 1080px)': {
     html: {

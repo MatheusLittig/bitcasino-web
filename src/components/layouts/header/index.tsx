@@ -1,9 +1,9 @@
 import * as S from './styles';
 
-export const {{pascalCase name}} = () => {
+export const Header = () => {
   return (
     <S.Wrapper>
-      <h1>{{pascalCase name}}</h1>
+      <h1>Header</h1>
     </S.Wrapper>
   );
 };

@@ -1,7 +1,7 @@
 import { createStitches, PropertyValue } from '@stitches/react';
 import { theme } from '@/styles/configs';
 
-const { config, styled, getCssText, globalCss } = createStitches({
+const { config, styled, getCssText, globalCss, keyframes } = createStitches({
   theme,
   media: {
     sm: '(min-width: 576px)',
@@ -112,7 +112,17 @@ const { config, styled, getCssText, globalCss } = createStitches({
     rows: (value: PropertyValue<'gridTemplateRows'>) => ({
       gridTemplateRows: value,
     }),
+    clSchema: (value: string) => ({
+      color: value,
+      backgroundColor: value,
+      border: '1px solid ' + value,
+
+      '&:hover': {
+        color: value,
+        backgroundColor: value,
+      },
+    }),
   },
 });
 
-export { config, styled, getCssText, globalCss };
+export { config, styled, getCssText, globalCss, keyframes };
