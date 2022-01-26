@@ -1,1 +1,1 @@
-export * from './fetch-crypto-currency';
+export * from './fetch-crypto';

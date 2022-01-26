@@ -1,4 +1,5 @@
-const url = 'https://api.blocktap.io/graphql';
+import { apollo } from '@/apis';
+import { gql } from '@apollo/client';
 
 type FetchedCryptoCurrencies = {
   marketSymbol: string;
@@ -6,11 +7,8 @@ type FetchedCryptoCurrencies = {
 };
 
 export async function fetchCryptoCurrency(cyrpto: string) {
-  const { data } = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      query: `query price {
+  const { data } = await apollo.query({
+    query: gql`query price {
         markets(filter:{ baseSymbol: {_eq:"${cyrpto.toUpperCase()}"} quoteSymbol: {_eq:"EUR"}}) {
           marketSymbol
           ticker {
@@ -18,11 +16,9 @@ export async function fetchCryptoCurrency(cyrpto: string) {
           }
         }
       }`,
-      variables: {
-        now: new Date().toISOString(),
-      },
-    }),
-  }).then(res => res.json());
+  });
+
+  console.log(data);
 
   const { marketSymbol, ticker }: FetchedCryptoCurrencies = data.markets[0];
 

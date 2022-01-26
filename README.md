@@ -28,6 +28,7 @@ The following technologies were used in the project:
 
 - [Next.js](https://nextjs.org/)
 - [Stitches](https://stitches.dev/)
+- [Apollo](https://www.apollographql.com/)
 
 ## :white_check_mark: Requirements ##
 
