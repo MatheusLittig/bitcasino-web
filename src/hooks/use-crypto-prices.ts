@@ -8,6 +8,8 @@ export const useCryptoPrices = () => {
     [],
   );
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const intialCryptoCurrencies: CryptoCurrencies[] = [
     {
       symbol: 'BTC',
@@ -35,15 +37,19 @@ export const useCryptoPrices = () => {
   }, []);
 
   async function onAddCryptoCurrency(cryptoCurrency: string) {
+    setIsLoading(true);
     try {
       const fetchedData = await fetchCryptoCurrency(cryptoCurrency);
 
-      return setCryptoCurrencies(prevState => [
+      setCryptoCurrencies(prevState => [
         ...prevState,
         formatCurrency(fetchedData),
       ]);
+
+      return setIsLoading(false);
     } catch (err) {
-      return alert('Invalid crypto currency');
+      alert('Invalid crypto currency');
+      return setIsLoading(false);
     }
   }
 
@@ -55,5 +61,10 @@ export const useCryptoPrices = () => {
     return setCryptoCurrencies(filteredCryptoCurrencies);
   }
 
-  return { cryptoCurrencies, onAddCryptoCurrency, onDeleteCryptoCurrency };
+  return {
+    cryptoCurrencies,
+    isLoading,
+    onAddCryptoCurrency,
+    onDeleteCryptoCurrency,
+  };
 };

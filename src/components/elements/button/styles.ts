@@ -9,4 +9,10 @@ export const Wrapper = styled('button', {
   background: '$primary',
 
   fontWeight: '$medium',
+
+  transition: 'all 0.2s ease-in-out',
+
+  '&:hover': {
+    opacity: 0.8,
+  },
 });

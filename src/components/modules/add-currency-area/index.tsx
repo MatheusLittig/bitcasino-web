@@ -1,13 +1,18 @@
-import { Button, Input } from '@/components/elements';
+import { Button, Input, Spinner } from '@/components/elements';
 import { useState } from 'react';
 import * as S from './styles';
 
 interface AddCurrencyAreaProps {
   onAddCurrency: (currency: string) => void;
+  isLoading: boolean;
 }
 
-export const AddCurrencyArea = ({ onAddCurrency }: AddCurrencyAreaProps) => {
+export const AddCurrencyArea = ({
+  onAddCurrency,
+  isLoading,
+}: AddCurrencyAreaProps) => {
   const [currency, setCurrency] = useState('');
+  console.log(isLoading);
   return (
     <S.Wrapper>
       <S.FormArea>
@@ -28,7 +33,7 @@ export const AddCurrencyArea = ({ onAddCurrency }: AddCurrencyAreaProps) => {
             return (input.value = '');
           }}
         >
-          Add
+          {isLoading ? <Spinner /> : 'Add'}
         </Button>
       </S.FormArea>
 

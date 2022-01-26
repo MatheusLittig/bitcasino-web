@@ -14,6 +14,7 @@ export const Footer = () => {
           pretium dolor.
         </S.Paragraph>
       </S.Content>
+      <S.Figure src="/pictures/figure.png" alt="Figure" />
     </S.Wrapper>
   );
 };

@@ -8,7 +8,7 @@ export const AppLayout: React.FC = ({ children }) => {
       <S.Content>{children}</S.Content>
       <Footer />
       <S.Background src="/pictures/bg.png" alt="Background" />
-      <S.Figure src="/pictures/figure.png" alt="Figure" />
+      {/* <S.Figure src="/pictures/figure.png" alt="Figure" /> */}
     </S.Wrapper>
   );
 };
