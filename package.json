@@ -1,8 +1,8 @@
 {
-  "name": "bitcassino-web",
+  "name": "bitcasino-web",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:MatheusLittig/bitcassino-web.git",
+  "repository": "git@github.com:MatheusLittig/bitcasino-web.git",
   "author": "MatheusLittig <littig.works@gmail.com>",
   "scripts": {
     "dev": "next dev",
