@@ -37,9 +37,7 @@ export const AddCurrencyArea = ({
         </Button>
       </S.FormArea>
 
-      <p>
-        Use of this service is subject to terms and <br /> conditions
-      </p>
+      <span>Use of this service is subject to terms and conditions</span>
     </S.Wrapper>
   );
 };

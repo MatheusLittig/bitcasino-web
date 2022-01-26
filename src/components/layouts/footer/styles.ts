@@ -9,6 +9,10 @@ export const Wrapper = styled('footer', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
+
+  '@media (max-width: 1200px)': {
+    alignItems: 'flex-end',
+  },
 });
 
 export const Content = styled('div', {
@@ -30,6 +34,12 @@ export const Paragraph = styled('p', {
   fontWeight: '$medium',
   fontSize: '$sm',
   textAlign: 'center',
+
+  '@media (max-width: 1000px)': {
+    padding: '0 60px',
+    maxWidth: '100%',
+    fontSize: '$xs',
+  },
 });
 
 export const Figure = styled('img', {
@@ -37,4 +47,8 @@ export const Figure = styled('img', {
   width: 500,
   bottom: 140,
   zIndex: -1,
+
+  '@media (max-width: 450px)': {
+    display: 'none',
+  },
 });

@@ -17,7 +17,7 @@ export const CurrencyCard = ({
   return (
     <S.Wrapper>
       <S.CurrencyContainer>
-        <Image src={Icon} alt="Currewncy Icon" />
+        <Image src={Icon} alt="Currewncy Icon" width={40} height={49} />
 
         <S.CurrencyInfo>
           <h3>{currency}</h3>

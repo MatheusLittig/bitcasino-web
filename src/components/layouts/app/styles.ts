@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { styled } from 'stitches.config';
 
 export const Wrapper = styled('main', {
@@ -9,6 +8,10 @@ export const Wrapper = styled('main', {
   rows: '80px auto 140px',
   position: 'relative',
   overflowX: 'hidden',
+
+  '@media (max-width: 600)': {
+    rows: '80px auto 300px',
+  },
 });
 
 export const Content = styled('div', {
@@ -17,30 +20,11 @@ export const Content = styled('div', {
   flex: 1,
   zIndex: 4,
   m: '0 auto',
+
+  '@media (max-width: 1200px)': {
+    padding: '0 60px',
+  },
 });
-
-// export const Figure = styled('img', {
-//   position: 'absolute',
-//   width: 500,
-//   zIndex: 0,
-//   bottom: 140,
-//   right: 400,
-
-//   '@media (max-height: 900px)': {
-//     bottom: -0,
-//     right: 600,
-//   },
-
-//   '@media (max-height: 768px)': {
-//     bottom: -60,
-//     right: 500,
-//   },
-
-//   '@media (max-height: 700px)': {
-//     bottom: -140,
-//     right: 400,
-//   },
-// });
 
 export const Background = styled('img', {
   position: 'absolute',

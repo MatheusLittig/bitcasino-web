@@ -1,11 +1,9 @@
 import { styled } from 'stitches.config';
 
 export const Wrapper = styled('main', {
-  width: 450,
-  height: 280,
   background: 'white',
   borderRadius: '$sm',
-  padding: 40,
+  padding: '40px 60px',
 
   textAlign: 'center',
   color: '$text_light',
@@ -13,7 +11,20 @@ export const Wrapper = styled('main', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'space-between',
+  gap: '40px',
+
+  '@media (max-width: 1200px)': {
+    padding: '20px',
+  },
+
+  span: {
+    width: '100%',
+    maxWidth: '300px',
+
+    '@media (max-width: 1000px)': {
+      maxWidth: '100%',
+    },
+  },
 });
 
 export const FormArea = styled('div', {

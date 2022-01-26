@@ -10,7 +10,9 @@
     "start": "next start",
     "lint": "next lint",
     "g_el": "yarn plop --plopfile ./generators/elements/plopfile.js",
-    "g_v": "yarn plop --plopfile ./generators/views/plopfile.js "
+    "g_v": "yarn plop --plopfile ./generators/views/plopfile.js ",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
@@ -29,6 +31,7 @@
     "husky": "^7.0.4",
     "plop": "^3.0.5",
     "prettier": "^2.5.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.5.5"
   },
   "dependencies": {

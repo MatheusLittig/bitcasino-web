@@ -15,4 +15,8 @@ export const InputStyled = styled('input', {
 
   fontSize: '$md',
   fontWeight: '$normal',
+
+  '@media (max-width: 450px)': {
+    width: '100%',
+  },
 });

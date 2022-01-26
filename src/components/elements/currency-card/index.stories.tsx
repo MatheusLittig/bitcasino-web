@@ -7,4 +7,11 @@ export default {
   component: CurrencyCard,
 } as Meta;
 
-export const Basic: Story = args => <CurrencyCard {...args} />;
+export const Basic: Story = args => (
+  <CurrencyCard
+    {...args}
+    currency="BTC"
+    price="000.00 E"
+    onDelete={() => Promise.resolve()}
+  />
+);

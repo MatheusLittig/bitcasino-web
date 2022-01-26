@@ -6,4 +6,12 @@ export const Wrapper = styled('header', {
   m: '0 auto',
   display: 'flex',
   alignItems: 'center',
+
+  '@media (max-width: 1200px)': {
+    padding: '0 60px',
+  },
+
+  '@media (max-width: 450px)': {
+    justifyContent: 'center',
+  },
 });

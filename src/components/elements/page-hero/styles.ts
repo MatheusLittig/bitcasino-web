@@ -13,6 +13,10 @@ export const HeroTitle = styled('h1', {
   lineHeight: 1.25,
   maxWidth: 450,
   fontWeight: '$medium',
+
+  '@media (max-width: 450px)': {
+    maxWidth: 300,
+  },
 });
 
 export const HeroDescription = styled('p', {

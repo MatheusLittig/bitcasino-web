@@ -7,4 +7,4 @@ export default {
   component: Button,
 } as Meta;
 
-export const Basic: Story = args => <Button {...args} />;
+export const Basic: Story = args => <Button>Teste</Button>;
