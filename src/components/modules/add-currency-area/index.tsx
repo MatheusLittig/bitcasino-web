@@ -12,7 +12,6 @@ export const AddCurrencyArea = ({
   isLoading,
 }: AddCurrencyAreaProps) => {
   const [currency, setCurrency] = useState('');
-  console.log(isLoading);
   return (
     <S.Wrapper>
       <S.FormArea>

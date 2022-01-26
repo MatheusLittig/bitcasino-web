@@ -13,11 +13,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link
-            rel="shortcut icon"
-            href="/svgs/fav-icon.svg"
-            type="image/svg"
-          />
+          <link rel="icon" type="image/png" href="/pictures/fav-icon.png" />
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
