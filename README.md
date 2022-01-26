@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<img src="./public/pictures/fav-icon.png" alt="Bitcasino" width="100px"/>
+<img src="./public/svgs/fav-icon.svg" alt="Bitcasino" width="100px"/>
 
 </h1>
 
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#rocket-techs">Dependencies</a> &#xa0; | &#xa0;
+  <a href="#rocket-dependencies">Dependencies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-getting-started">Getting Started</a> &#xa0; &#xa0;
 </p>
