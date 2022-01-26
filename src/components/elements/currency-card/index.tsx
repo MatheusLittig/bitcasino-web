@@ -3,19 +3,29 @@ import * as S from './styles';
 import Icon from '@/svgs/icon.svg';
 import { FiX } from 'react-icons/fi';
 
-export const CurrencyCard = () => {
+interface CurrencyCardProps {
+  currency: string;
+  price: string;
+  onDelete: () => void;
+}
+
+export const CurrencyCard = ({
+  currency,
+  price,
+  onDelete,
+}: CurrencyCardProps) => {
   return (
     <S.Wrapper>
       <S.CurrencyContainer>
         <Image src={Icon} alt="Currewncy Icon" />
 
         <S.CurrencyInfo>
-          <h3>BTC</h3>
-          <p>7842.27 €</p>
+          <h3>{currency}</h3>
+          <p>{price}</p>
         </S.CurrencyInfo>
       </S.CurrencyContainer>
 
-      <S.CloseBtn>
+      <S.CloseBtn onClick={onDelete}>
         <FiX />
       </S.CloseBtn>
     </S.Wrapper>
