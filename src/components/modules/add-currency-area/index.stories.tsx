@@ -7,4 +7,10 @@ export default {
   component: AddCurrencyArea,
 } as Meta;
 
-export const Basic: Story = args => <AddCurrencyArea {...args} />;
+export const Basic: Story = args => (
+  <AddCurrencyArea
+    {...args}
+    onAddCurrency={() => Promise.resolve()}
+    isLoading={true}
+  />
+);
